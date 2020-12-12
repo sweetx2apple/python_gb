@@ -14,3 +14,4 @@ for el in range(list.count(' ') + 1):
     else:
         print(f" {num} {strs [el] [0:10]}")
         num += 1
+#как всегда, работает, но фз как -_-
