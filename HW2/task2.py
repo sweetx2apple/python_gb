@@ -5,7 +5,6 @@
 
 list = input('Введите элементы списка: ')
 my_list = []
-iiiiiii
 # sudo a2dismod tupizm
 # sudo a2enmod mozg
 for i in range(1,len(list), 2):
