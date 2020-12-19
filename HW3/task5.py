@@ -26,7 +26,30 @@
 #ух тут секса привалило на пол года вперед, не знаю как у других
 #думала про кучу елдов, но чет это вообще порно на ножках выходило
 
-symbol = input("stop at: ")
+#symbol = input("stop at: ")
+#row=''
+#s=0
+
+#def sum(s,l):
+#    x = 0
+#    for i in l:
+#        if i == symbol:
+#            print (s + x)
+#            exit()
+#        x += int(i)
+#    return s + x
+
+#if __name__ == "__main__":
+#    while True:
+#        row=input("input: ")
+#        s = sum(s,row.split())
+#        print (s)
+
+#ValueError ещё воткнуть..или не надо..или надо..3-06 ночи,а у меня дисперсия 800 Т_Т
+#AAAAAAaaaaaaaaaaaaaaaaaaaaaaaa
+symbol = ''
+while symbol.isalpha() is not True:
+    symbol = input("Стоп символ (не цифры, буковки дауай): ")[0]
 row=''
 s=0
 
@@ -36,7 +59,11 @@ def sum(s,l):
         if i == symbol:
             print (s + x)
             exit()
-        x += int(i)
+        try:
+            x += int(i)
+        except ValueError:
+            print (s + x)
+            exit()
     return s + x
 
 if __name__ == "__main__":
@@ -44,7 +71,4 @@ if __name__ == "__main__":
         row=input("input: ")
         s = sum(s,row.split())
         print (s)
-
-
-#ValueError ещё воткнуть..или не надо..или надо..3-06 ночи,а у меня дисперсия 800 Т_Т
-#AAAAAAaaaaaaaaaaaaaaaaaaaaaaaa
+#ideal version です。
