@@ -7,7 +7,8 @@ my_list = [True, -7, 13, 3.14, 'something']
 def my_type(el):
     for el in range(len(my_list)):
         print(type(my_list[el]))
-    return
+
 my_type(my_list)
+
 #не, ну работает же. чую бесовщину, обосновать не могу.
 #print(type(my_list))
